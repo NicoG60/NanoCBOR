@@ -15,17 +15,17 @@
     "license": "CC0-1.0",
     "frameworks": "*",
     "platforms": "*",
-    "headers": "nanocbor/nanocbor.h",
     "export": {
         "include": [
-            "include/*.headers",
+            "include/*.h",
             "src/*.c",
             "library.json"
         ]
     },
     "build": {
         "flags": [
-            "-D NANOCBOR_BYTEORDER_HEADER=\"pio_endian.h>\""
+            "-I include",
+            "-I pio"
         ]
     }
 }
