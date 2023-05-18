@@ -22,5 +22,10 @@
             "src/*.c",
             "library.json"
         ]
+    },
+    "build": {
+        "flags": [
+            "-D NANOCBOR_BYTEORDER_HEADER=\"pio_endian.h>\""
+        ]
     }
 }
