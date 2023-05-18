@@ -1,0 +1,26 @@
+{
+    "name": "NanoCBOR",
+    "version": "0.0.1",
+    "description": "A tiny CBOR library aimed at embedded and heavily constrained devices.",
+    "keywords": [ "cbor" ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bergzand/NanoCBOR"
+    },
+    "authors": {
+        "name": "Koen Zandberg",
+        "email": "koen@bergzand.net",
+        "url": "https://www.bergzand.net/"
+    },
+    "license": "CC0-1.0",
+    "frameworks": "*",
+    "platforms": "*",
+    "headers": "nanocbor/nanocbor.h",
+    "export": {
+        "include": [
+            "include/*.headers",
+            "src/*.c",
+            "library.json"
+        ]
+    }
+}
